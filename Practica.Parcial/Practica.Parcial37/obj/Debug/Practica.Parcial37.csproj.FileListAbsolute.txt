@@ -1,0 +1,7 @@
+E:\Practica.Parcial\Practica.Parcial37\bin\Debug\Practica.Parcial37.exe.config
+F:\Practica.Parcial\Practica.Parcial37\bin\Debug\Practica.Parcial37.exe.config
+F:\Practica.Parcial\Practica.Parcial37\bin\Debug\Practica.Parcial37.exe
+F:\Practica.Parcial\Practica.Parcial37\bin\Debug\Practica.Parcial37.pdb
+F:\Practica.Parcial\Practica.Parcial37\obj\Debug\Practica.Parcial37.csprojResolveAssemblyReference.cache
+F:\Practica.Parcial\Practica.Parcial37\obj\Debug\Practica.Parcial37.exe
+F:\Practica.Parcial\Practica.Parcial37\obj\Debug\Practica.Parcial37.pdb

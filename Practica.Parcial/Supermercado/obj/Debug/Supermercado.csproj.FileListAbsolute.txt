@@ -1,0 +1,8 @@
+F:\Practica.Parcial\Supermercado\obj\Debug\Supermercado.csprojResolveAssemblyReference.cache
+F:\Practica.Parcial\Supermercado\bin\Debug\Supermercado.exe.config
+F:\Practica.Parcial\Supermercado\bin\Debug\Supermercado.exe
+F:\Practica.Parcial\Supermercado\bin\Debug\Supermercado.pdb
+F:\Practica.Parcial\Supermercado\bin\Debug\Olinuck.Dario.Estanteria.dll
+F:\Practica.Parcial\Supermercado\bin\Debug\Olinuck.Dario.Estanteria.pdb
+F:\Practica.Parcial\Supermercado\obj\Debug\Supermercado.exe
+F:\Practica.Parcial\Supermercado\obj\Debug\Supermercado.pdb

@@ -1,0 +1,5 @@
+F:\Practica.Parcial\Olinuck.Dario.Estanteria\bin\Debug\Olinuck.Dario.Estanteria.dll
+F:\Practica.Parcial\Olinuck.Dario.Estanteria\bin\Debug\Olinuck.Dario.Estanteria.pdb
+F:\Practica.Parcial\Olinuck.Dario.Estanteria\obj\Debug\Olinuck.Dario.Estanteria.csprojResolveAssemblyReference.cache
+F:\Practica.Parcial\Olinuck.Dario.Estanteria\obj\Debug\Olinuck.Dario.Estanteria.dll
+F:\Practica.Parcial\Olinuck.Dario.Estanteria\obj\Debug\Olinuck.Dario.Estanteria.pdb
