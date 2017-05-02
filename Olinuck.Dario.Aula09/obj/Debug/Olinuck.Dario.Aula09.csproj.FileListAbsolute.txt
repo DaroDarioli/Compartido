@@ -1,0 +1,10 @@
+E:\Olinuck.Dario\Olinuck.Dario.Aula09\obj\Debug\Olinuck.Dario.Aula09.csprojResolveAssemblyReference.cache
+E:\Olinuck.Dario\Olinuck.Dario.Aula09\bin\Debug\Olinuck.Dario.Aula09.dll
+E:\Olinuck.Dario\Olinuck.Dario.Aula09\bin\Debug\Olinuck.Dario.Aula09.pdb
+E:\Olinuck.Dario\Olinuck.Dario.Aula09\obj\Debug\Olinuck.Dario.Aula09.dll
+E:\Olinuck.Dario\Olinuck.Dario.Aula09\obj\Debug\Olinuck.Dario.Aula09.pdb
+F:\Olinuck.Dario\Olinuck.Dario.Aula09\bin\Debug\Olinuck.Dario.Aula09.dll
+F:\Olinuck.Dario\Olinuck.Dario.Aula09\bin\Debug\Olinuck.Dario.Aula09.pdb
+F:\Olinuck.Dario\Olinuck.Dario.Aula09\obj\Debug\Olinuck.Dario.Aula09.csprojResolveAssemblyReference.cache
+F:\Olinuck.Dario\Olinuck.Dario.Aula09\obj\Debug\Olinuck.Dario.Aula09.dll
+F:\Olinuck.Dario\Olinuck.Dario.Aula09\obj\Debug\Olinuck.Dario.Aula09.pdb
