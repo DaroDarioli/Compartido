@@ -1,0 +1,16 @@
+F:\Olinuck.Dario\Olinuck.Dario.Ejer39\bin\Debug\Olinuck.Dario.Ejer39.exe.config
+F:\Olinuck.Dario\Olinuck.Dario.Ejer39\bin\Debug\Olinuck.Dario.Ejer39.exe
+F:\Olinuck.Dario\Olinuck.Dario.Ejer39\bin\Debug\Olinuck.Dario.Ejer39.pdb
+F:\Olinuck.Dario\Olinuck.Dario.Ejer39\bin\Debug\LibaryOperarios.dll
+F:\Olinuck.Dario\Olinuck.Dario.Ejer39\bin\Debug\LibaryOperarios.pdb
+F:\Olinuck.Dario\Olinuck.Dario.Ejer39\obj\Debug\Olinuck.Dario.Ejer39.csprojResolveAssemblyReference.cache
+F:\Olinuck.Dario\Olinuck.Dario.Ejer39\obj\Debug\Olinuck.Dario.Ejer39.exe
+F:\Olinuck.Dario\Olinuck.Dario.Ejer39\obj\Debug\Olinuck.Dario.Ejer39.pdb
+E:\Olinuck.Dario\Olinuck.Dario.Ejer39\bin\Debug\Olinuck.Dario.Ejer39.exe.config
+E:\Olinuck.Dario\Olinuck.Dario.Ejer39\obj\Debug\Olinuck.Dario.Ejer39.exe
+E:\Olinuck.Dario\Olinuck.Dario.Ejer39\obj\Debug\Olinuck.Dario.Ejer39.pdb
+E:\Olinuck.Dario\Olinuck.Dario.Ejer39\bin\Debug\Olinuck.Dario.Ejer39.exe
+E:\Olinuck.Dario\Olinuck.Dario.Ejer39\bin\Debug\Olinuck.Dario.Ejer39.pdb
+E:\Olinuck.Dario\Olinuck.Dario.Ejer39\bin\Debug\LibaryOperarios.dll
+E:\Olinuck.Dario\Olinuck.Dario.Ejer39\bin\Debug\LibaryOperarios.pdb
+E:\Olinuck.Dario\Olinuck.Dario.Ejer39\obj\Debug\Olinuck.Dario.Ejer39.csprojResolveAssemblyReference.cache
