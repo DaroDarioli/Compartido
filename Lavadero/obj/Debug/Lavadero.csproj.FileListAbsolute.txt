@@ -1,0 +1,7 @@
+F:\Practica.Parcial\Lavadero\bin\Debug\Lavadero.dll
+F:\Practica.Parcial\Lavadero\bin\Debug\Lavadero.pdb
+F:\Practica.Parcial\Lavadero\obj\Debug\Lavadero.csprojResolveAssemblyReference.cache
+F:\Practica.Parcial\Lavadero\obj\Debug\Lavadero.dll
+F:\Practica.Parcial\Lavadero\obj\Debug\Lavadero.pdb
+F:\Practica.Parcial\Lavadero\obj\Debug\Lavadero.FormLavadero.resources
+F:\Practica.Parcial\Lavadero\obj\Debug\Lavadero.csproj.GenerateResource.Cache

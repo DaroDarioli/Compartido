@@ -1,0 +1,8 @@
+F:\Practica.Parcial\LavaRap\bin\Debug\LavaRap.exe.config
+F:\Practica.Parcial\LavaRap\bin\Debug\LavaRap.exe
+F:\Practica.Parcial\LavaRap\bin\Debug\LavaRap.pdb
+F:\Practica.Parcial\LavaRap\bin\Debug\Lavadero.dll
+F:\Practica.Parcial\LavaRap\bin\Debug\Lavadero.pdb
+F:\Practica.Parcial\LavaRap\obj\Debug\LavaRap.csprojResolveAssemblyReference.cache
+F:\Practica.Parcial\LavaRap\obj\Debug\LavaRap.exe
+F:\Practica.Parcial\LavaRap\obj\Debug\LavaRap.pdb
