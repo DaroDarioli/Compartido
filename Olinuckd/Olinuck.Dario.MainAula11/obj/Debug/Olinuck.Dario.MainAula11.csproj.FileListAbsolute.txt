@@ -1,0 +1,8 @@
+E:\Olinuckd\Olinuck.Dario.MainAula11\bin\Debug\Olinuck.Dario.MainAula11.exe.config
+E:\Olinuckd\Olinuck.Dario.MainAula11\bin\Debug\Olinuck.Dario.MainAula11.exe
+E:\Olinuckd\Olinuck.Dario.MainAula11\bin\Debug\Olinuck.Dario.MainAula11.pdb
+E:\Olinuckd\Olinuck.Dario.MainAula11\bin\Debug\Olinuck.Dario.Aula11.dll
+E:\Olinuckd\Olinuck.Dario.MainAula11\bin\Debug\Olinuck.Dario.Aula11.pdb
+E:\Olinuckd\Olinuck.Dario.MainAula11\obj\Debug\Olinuck.Dario.MainAula11.csprojResolveAssemblyReference.cache
+E:\Olinuckd\Olinuck.Dario.MainAula11\obj\Debug\Olinuck.Dario.MainAula11.exe
+E:\Olinuckd\Olinuck.Dario.MainAula11\obj\Debug\Olinuck.Dario.MainAula11.pdb

@@ -1,0 +1,5 @@
+E:\Olinuckd\Olinuck.Dario.Aula11\bin\Debug\Olinuck.Dario.Aula11.dll
+E:\Olinuckd\Olinuck.Dario.Aula11\bin\Debug\Olinuck.Dario.Aula11.pdb
+E:\Olinuckd\Olinuck.Dario.Aula11\obj\Debug\Olinuck.Dario.Aula11.csprojResolveAssemblyReference.cache
+E:\Olinuckd\Olinuck.Dario.Aula11\obj\Debug\Olinuck.Dario.Aula11.dll
+E:\Olinuckd\Olinuck.Dario.Aula11\obj\Debug\Olinuck.Dario.Aula11.pdb
