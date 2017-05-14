@@ -1,0 +1,5 @@
+F:\CentralTelefonica\CentralEntidades\bin\Debug\CentralEntidades.dll
+F:\CentralTelefonica\CentralEntidades\bin\Debug\CentralEntidades.pdb
+F:\CentralTelefonica\CentralEntidades\obj\Debug\CentralEntidades.csprojResolveAssemblyReference.cache
+F:\CentralTelefonica\CentralEntidades\obj\Debug\CentralEntidades.dll
+F:\CentralTelefonica\CentralEntidades\obj\Debug\CentralEntidades.pdb
