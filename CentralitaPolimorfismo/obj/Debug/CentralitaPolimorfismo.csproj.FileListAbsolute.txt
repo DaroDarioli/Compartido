@@ -1,0 +1,5 @@
+F:\CentralTelefonica\CentralitaPolimorfismo\bin\Debug\CentralitaPolimorfismo.dll
+F:\CentralTelefonica\CentralitaPolimorfismo\bin\Debug\CentralitaPolimorfismo.pdb
+F:\CentralTelefonica\CentralitaPolimorfismo\obj\Debug\CentralitaPolimorfismo.dll
+F:\CentralTelefonica\CentralitaPolimorfismo\obj\Debug\CentralitaPolimorfismo.pdb
+F:\CentralTelefonica\CentralitaPolimorfismo\obj\Debug\CentralitaPolimorfismo.csprojResolveAssemblyReference.cache
