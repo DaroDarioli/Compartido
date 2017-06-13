@@ -1,0 +1,10 @@
+E:\Olinuck.Dario\Aula14\bin\Debug\Aula14.dll
+E:\Olinuck.Dario\Aula14\bin\Debug\Aula14.pdb
+E:\Olinuck.Dario\Aula14\obj\Debug\Aula14.dll
+E:\Olinuck.Dario\Aula14\obj\Debug\Aula14.pdb
+E:\Olinuck.Dario\Aula14\obj\Debug\Aula14.csprojResolveAssemblyReference.cache
+F:\Olinuck.Dario\Aula14\bin\Debug\Aula14.dll
+F:\Olinuck.Dario\Aula14\bin\Debug\Aula14.pdb
+F:\Olinuck.Dario\Aula14\obj\Debug\Aula14.csprojResolveAssemblyReference.cache
+F:\Olinuck.Dario\Aula14\obj\Debug\Aula14.dll
+F:\Olinuck.Dario\Aula14\obj\Debug\Aula14.pdb

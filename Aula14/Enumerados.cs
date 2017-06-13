@@ -1,0 +1,1 @@
+﻿public enum ESexo1 { Masculino, Femenino, Indefinido }

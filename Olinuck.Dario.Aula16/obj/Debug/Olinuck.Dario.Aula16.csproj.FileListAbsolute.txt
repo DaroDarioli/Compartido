@@ -1,0 +1,10 @@
+E:\Olinuck.Dario\Olinuck.Dario.Aula16\bin\Debug\Olinuck.Dario.Aula16.dll
+E:\Olinuck.Dario\Olinuck.Dario.Aula16\bin\Debug\Olinuck.Dario.Aula16.pdb
+E:\Olinuck.Dario\Olinuck.Dario.Aula16\obj\Debug\Olinuck.Dario.Aula16.dll
+E:\Olinuck.Dario\Olinuck.Dario.Aula16\obj\Debug\Olinuck.Dario.Aula16.pdb
+E:\Olinuck.Dario\Olinuck.Dario.Aula16\obj\Debug\Olinuck.Dario.Aula16.csprojResolveAssemblyReference.cache
+F:\Olinuck.Dario\Olinuck.Dario.Aula16\bin\Debug\Olinuck.Dario.Aula16.dll
+F:\Olinuck.Dario\Olinuck.Dario.Aula16\bin\Debug\Olinuck.Dario.Aula16.pdb
+F:\Olinuck.Dario\Olinuck.Dario.Aula16\obj\Debug\Olinuck.Dario.Aula16.csprojResolveAssemblyReference.cache
+F:\Olinuck.Dario\Olinuck.Dario.Aula16\obj\Debug\Olinuck.Dario.Aula16.dll
+F:\Olinuck.Dario\Olinuck.Dario.Aula16\obj\Debug\Olinuck.Dario.Aula16.pdb
