@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olinuck.Dario.ParcialII", "Olinuck.Dario.ParcialII\Olinuck.Dario.ParcialII.csproj", "{C3C014F9-7C6D-438E-8ABB-6F636457CAC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olinuck.Dario.ParcialIIMain", "Olinuck.Dario.ParcialIIMain\Olinuck.Dario.ParcialIIMain.csproj", "{494BC7B6-7E77-4D1A-ADD6-701BBE29D000}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3C014F9-7C6D-438E-8ABB-6F636457CAC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3C014F9-7C6D-438E-8ABB-6F636457CAC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3C014F9-7C6D-438E-8ABB-6F636457CAC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3C014F9-7C6D-438E-8ABB-6F636457CAC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{494BC7B6-7E77-4D1A-ADD6-701BBE29D000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{494BC7B6-7E77-4D1A-ADD6-701BBE29D000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{494BC7B6-7E77-4D1A-ADD6-701BBE29D000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{494BC7B6-7E77-4D1A-ADD6-701BBE29D000}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
