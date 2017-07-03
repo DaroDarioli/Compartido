@@ -1,0 +1,11 @@
+F:\Olinuck.Dario\FormularioDelegados20\bin\Debug\FormularioDelegados20.exe.config
+F:\Olinuck.Dario\FormularioDelegados20\bin\Debug\FormularioDelegados20.exe
+F:\Olinuck.Dario\FormularioDelegados20\bin\Debug\FormularioDelegados20.pdb
+F:\Olinuck.Dario\FormularioDelegados20\obj\Debug\FormularioDelegados20.csprojResolveAssemblyReference.cache
+F:\Olinuck.Dario\FormularioDelegados20\obj\Debug\FormularioDelegados20.Form1.resources
+F:\Olinuck.Dario\FormularioDelegados20\obj\Debug\FormularioDelegados20.FrmDatos.resources
+F:\Olinuck.Dario\FormularioDelegados20\obj\Debug\FormularioDelegados20.FrmTestDelegados.resources
+F:\Olinuck.Dario\FormularioDelegados20\obj\Debug\FormularioDelegados20.Properties.Resources.resources
+F:\Olinuck.Dario\FormularioDelegados20\obj\Debug\FormularioDelegados20.csproj.GenerateResource.Cache
+F:\Olinuck.Dario\FormularioDelegados20\obj\Debug\FormularioDelegados20.exe
+F:\Olinuck.Dario\FormularioDelegados20\obj\Debug\FormularioDelegados20.pdb
