@@ -1,0 +1,217 @@
+namespace Olinuck.Dario.MainAula18
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            DBconnect d1 = new DBconnect();
+
+            List<Persona> lista = new List<Persona>();
+
+            Persona p1 = new Persona(4, "Juan", "Perez", 26);
+
+            Console.WriteLine(d1.TestConexion());
+            Console.WriteLine(d1.TraerInfo());
+            Console.WriteLine("\n\n-----------Agrego una persona-----------");
+            Console.WriteLine(d1.AgregarPersona(p1));
+            Console.WriteLine(d1.TraerInfo());
+
+
+            Console.ReadLine();
+        }
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using System.Data;
+using System.Data.SqlClient;
+
+namespace Olinuck.Dario.Aula18
+{
+    public class DBconnect
+    {
+        private SqlConnection _connection;
+
+        private SqlCommand _command;
+
+        //public SqlConnection Conct
+        //{
+        //    set { this._conection = value;  }
+        //    get { return _conection;  }
+        //}
+
+
+
+        public DBconnect()
+        {
+            this._connection = new SqlConnection(Properties.Settings.Default.Setting);
+            this._command = new SqlCommand();
+        }
+
+        public bool TestConexion()
+        {
+            try
+            {
+                _connection.Open();
+                _connection.Close();
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }                     
+           
+        }
+
+        public string TraerInfo()
+        {
+            StringBuilder sb = new StringBuilder();
+
+
+            try
+            {
+                this._command.Connection = this._connection;
+                this._command.CommandType = CommandType.Text;
+                this._command.CommandText = "SELECT * FROM Personas";
+                this._connection.Open();
+
+                SqlDataReader sr = this._command.ExecuteReader();
+
+                while(sr.Read())
+                {
+                                        
+                    sb.AppendLine(sr[0].ToString());
+                    sb.AppendLine(sr[1].ToString());
+                    sb.AppendLine(sr[2].ToString());
+                    sb.AppendLine(sr[3].ToString());
+
+                }
+                sr.Close();
+                this._connection.Close();            
+                return sb.ToString();                              
+            
+            }
+            catch (Exception e)
+            {
+                sb.AppendLine("Error: "+e.Message);
+            }
+          
+            return sb.ToString();
+                    
+        }
+
+        public bool AgregarPersona(Persona p)
+        {
+            try
+            {
+                this._command.Connection = this._connection;
+                this._command.CommandType = CommandType.Text;
+                this._command.CommandText = "INSERT into Personas (nombre, apellido,edad) VALUES ('"+ p._nombre + "','"+p._apellido+"',"+p._edad+")";
+                this._connection.Open();
+                this._command.ExecuteNonQuery();
+                this._connection.Close();
+                return true;
+
+
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return false;
+            }
+
+        
+        }
+
+
+        public bool ModificarPersona(Persona p)
+        {
+            try
+            {
+                this._command.Connection = this._connection;
+                this._command.CommandType = CommandType.Text;
+                this._command.CommandText = "UPDATE Personas set nombre = '"+p._nombre+"', apellido = '"+p._apellido+"', edad= '"+p._edad+"' WHERE id = 5";
+                this._connection.Open();
+                this._command.ExecuteNonQuery();
+                this._connection.Close();
+
+                return true;
+
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return false;
+            }
+
+
+        }
+
+
+        public bool EliminarPersona(Persona p)
+        {
+            try
+            {
+                this._command.Connection = this._connection;
+                this._command.CommandType = CommandType.Text;
+                this._command.CommandText = "DELETE FROM peronas WHERE id =" + p._id;
+
+                this._command.ExecuteNonQuery();
+
+                return true;
+
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return false;
+            }
+
+
+        }
+
+
+
+
+
+    }
+}
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Olinuck.Dario.Aula18
+{
+    public class Persona
+    {
+        public int _id;
+
+        public string _nombre;
+
+        public string _apellido;
+
+        public int _edad;
+
+        public Persona(int id, string nombre, string apellido, int edad)
+        {
+            this._id = id;
+            this._nombre = nombre;
+            this._apellido = apellido;
+            this._edad = edad;
+
+        }
+    }
+}
+
+
