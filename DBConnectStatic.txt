@@ -1,0 +1,117 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace PracticaJulio2
+{
+    public enum ERango { Azafata, Cocinero, Maquinista, Cliente}
+
+    public class Pasajero
+    {
+        public string _apellido;
+
+        public string _nombre;
+
+        public int _edad;
+
+        public ERango rango;
+        #region Constructores
+
+        public Pasajero() { }
+        public Pasajero(string nombre, string apellido, int edad)
+        {
+            this._nombre = nombre;
+            this._apellido = apellido;
+            this._edad = edad;
+
+        }
+
+        #endregion
+
+
+        public override string ToString()
+        {
+
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Apellido: "+this._apellido);
+            sb.AppendLine("Nombre: " + this._nombre);
+            sb.AppendLine("Edad: " + this._edad);
+
+
+            return sb.ToString();
+
+        }
+
+        public static bool DBAgregar(Pasajero p)
+        {
+            SqlConnection _connection = new SqlConnection(Properties.Settings.Default.Setting);
+
+            SqlCommand _command = new SqlCommand();
+
+            try
+            {
+                _command.Connection = _connection;
+                _command.CommandType = CommandType.Text;
+                _command.CommandText = "INSERT into Personas (nombre, apellido,edad) VALUES ('" + p._nombre + "','" + p._apellido + "'," + p._edad + ")";
+                _connection.Open();
+                _command.ExecuteNonQuery();
+                _connection.Close();
+                return true;
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return false;
+            }
+        }
+
+
+        public static string MostrarBD(int aux)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            SqlConnection _connection = new SqlConnection(Properties.Settings.Default.Setting);
+            SqlCommand _command = new SqlCommand();
+
+            try
+            {
+                _command.Connection = _connection;
+                _command.CommandType = CommandType.Text;
+              		  //_command.CommandText = "SELECT * FROM Personas WHERE;
+        		  _command.CommandText = "SELECT * FROM Personas WHERE id = '"+aux+"'";
+                _connection.Open();
+
+                SqlDataReader sr = _command.ExecuteReader();
+
+                while (sr.Read())
+                {
+
+                    sb.AppendLine(sr[0].ToString());
+                    sb.AppendLine(sr[1].ToString());
+                    sb.AppendLine(sr[2].ToString());
+
+                }
+                sr.Close();
+                _connection.Close();
+                return sb.ToString();
+
+            }
+            catch (Exception e)
+            {
+                sb.AppendLine("Error: " + e.Message);
+            }
+
+            return sb.ToString();
+
+        }
+
+    }
+
+
+}
