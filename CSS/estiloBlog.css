@@ -1,0 +1,53 @@
+ul li{
+    display: inline;
+}
+
+ul li a{
+    text-decoration: none;
+    cursor: crosshair;
+}
+
+ul li a:hover{
+    background-color: green;
+    color: white;
+}
+
+
+section{       	
+    text-align: center;
+	float: left;
+	width: 70%;		
+}
+
+section h4{       	
+    text-align: left;
+	color: cyan;
+	
+}
+
+
+aside{    
+	float: right;
+	width: 30%;	
+}
+
+
+#boton{
+    width: 120px;
+	height:30px;
+	color:white;
+    border-radius: 3px;
+    background-color: cyan;	
+}
+
+#menu{    
+    height: 40px;  
+    background-color:red;
+    text-align: center;
+}
+
+footer{
+	clear:both;
+	background-color:red;
+
+/*  image floa para que de con txt*/
