@@ -1,0 +1,4 @@
+Apellido: Simpson Imagen: ./Nueva/Bart.png
+Apellido: Gonzalez Imagen: ./Nueva/Nelson.jpg
+Apellido: Friedman Imagen: ./Nueva/Milton.png
+Apellido: Cobain Imagen: ./Nueva/kurt.jpg

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cargar empleado </title>
+</head>
+<body>
+    <h3>HHRR Central</h3>
+<form action="administracion.php" method="post" enctype="multipart/form-data"> 
+    <br><b>Apellido: </b><input type="text" name = "apellido" >
+    <br><b>Nombre: </b><input type="text" name = "nombre" >
+    <br><b>DNI: </b><input type="text" name = "dni" >
+    <br><b>Sexo: </b><input type="text" name = "sexo" >
+    <br><b>Legajo: </b><input type="text" name = "legajo" >
+    <br><b>Sueldo: </b><input type="text" name = "sueldo" >
+    <input type="file" name="archivo"/>  
+    <input type="submit" name="cargarEmpleado" value="Subir"/>
+</form>
+
+    
+</body>
+</html>
