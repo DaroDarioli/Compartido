@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+
+
+<style>
+
+
+body, html {
+    padding: 0px;
+    margin: 0px;
+}
+
+#tabla{
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	background-image: url(a.jpg);
+    color: white;
+    padding: 4%;
+    background-size: cover;
+	background-repeat:no-repeat;
+	width:50%;
+	
+}
+
+td{
+	border:1px solid gray;
+	padding:2px;
+}
+
+/*
+#tabla tr td;nth-child(){
+	width:20%;
+}
+
+*/
+
+#tabla tr td.celda1{
+	width:20%;
+}
+
+#tabla tr.par{
+	color:aqua;
+	background: rgba(200,200,200,0.5);
+	text-shadow:0px 0px 2px black;
+}
+
+.botoncito{
+	width:35%;
+	height:20px;
+	background-color:#bbbbbb;
+	border-radius:100%;
+	border:1px solid #555555;
+	box-shadow: 1px 1px 5px black;
+	transition: box-shadow 200ms;
+}
+
+.botoncito:hover {
+    box-shadow: none;
+	width:30px;
+}
+
+.btnborrar{
+	float:right;
+}
+
+.encabezados{
+	margin-top:50px;
+	font-weight:bold;
+}
+
+
+#popup{
+position:fixed;
+width:100%;
+height:100%;
+background-color:rgba(0,0,0,0.5);
+top: 0px;
+    left: 0px;
+	display:none;
+
+}
+
+
+.contenido{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%, -50%);
+	width:40%;
+	height:30%;
+	background-color:white;
+	border-radius:10px;
+	text-align: center;
+}
+</style>
+
+
+</head>
+
+<body>
+		
+<a href="#" onclick="agregar()"> agregar personas </a>
+<a href="#" onclick="traerPersonas()"> traer personas </a>
+
+
+<div id="popup">
+<div class="contenido">
+	<h2 id="tituloPopup"></h2>
+	<input id="nombre">	<input id="apellido">  <input type="button" onclick="mandarNombre()" id="btn" value="mandar"> 
+</div>
+</div>
+
+</div>
+
+<table id="tabla">
+
+
+
+</table>
+
+
+
+
+
+
+
+<script>
+		var popup=	document.getElementById("popup");
+	var personas=[];
+	var req=new XMLHttpRequest();
+
+	
+	function traerPersonas(){
+	
+		console.log("trayendo personas");
+	
+		req.open('GET', '/traerpersonas', false); 
+		req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		req.send(null);
+		if (req.status == 200){
+			personas=JSON.parse(req.responseText);
+			armarLista();
+		}
+			
+	
+	}
+	
+	function borrar(i){
+		req.open('POST', '/eliminarpersona', true);
+		req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		req.send("indice="+i);
+		if (req.status == 200){
+			traerPersonas()		
+		}
+	}
+	
+	
+	function armarLista(){
+		
+		str="<tr class='encabezados'><td class='celda1'></td><td>NOMBRE</td><td>APELLIDO</td></tr>"
+		for(i=0;i<personas.length;i++){
+			clase="";
+			if(i%2==0) clase=" par "
+			console.log(personas[i]);			
+			str+="<tr class='"+clase+"'><td  class='celda1'><div class='botoncito' onclick='borrar("+i+")'></div> ";
+			str+="<div class='botoncito btnborrar' onclick='modificarPersona("+i+")'>M</div> </td><td>";
+			str+=personas[i].nombre+"</td>";
+			str+="<td>"+personas[i].apellido+"</td></tr>";
+		}
+		document.getElementById("tabla").innerHTML=str;
+	}
+	
+	
+	function agregar(){
+		popup.style.display="block";
+		btn.value = "Agregar";
+		btn.onclick = mandarNombre;
+		document.getElementById("nombre").value="";
+		document.getElementById("apellido").value="";
+	}
+
+	function mandarNombre(){		
+		nombre=document.getElementById("nombre").value;
+		apellido=document.getElementById("apellido").value;
+		console.log(nombre, apellido)
+		str="nombre="+nombre+"&apellido="+apellido;
+		req.open('POST', '/agregarpersona', true);
+		req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		req.send(str);
+
+		
+
+		req.onreadystatechange = function(){
+		
+			if (req.readyState == 4) {
+				console.log(req.response);
+				popup.style.display="none";
+				traerPersonas();
+			}
+		}			
+	}
+
+	function modificarPersona(o)
+	{
+		popup.style.display="block";
+		btn.value = "Modificar";
+		btn.onclick = function(){
+			req.open('POST', '/modificarpersona', true);
+			req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			nombre=document.getElementById("nombre").value;
+			apellido=document.getElementById("apellido").value;
+			obj = new Object();
+			obj.nombre = nombre;
+			obj.apellido = apellido;
+			req.send("persona="+JSON.stringify(obj) + "&indice=" + o);
+			req.onreadystatechange = function(){
+		
+				if (req.readyState == 4) {
+					console.log(req.response);
+					popup.style.display="none";
+					traerPersonas();
+				}
+			}
+		}
+	}
+	
+	</script>
+
+
+</body>
+</html>
