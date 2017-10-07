@@ -1,12 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #tablaUsuarios {
+            background-color: green;
+            border-color: black;
+            border: 5px;
+        }
+    </style>
+    <script>
+        window.addEventListener('load', function () { imprimirContenido(); });
+
+        function Cargar() {
+
+            xhr = new XMLHttpRequest();
+            nombreStr = document.getElementById('nombreStr').value;
+            apellidoStr = document.getElementById('apellidoStr').value;
+
+            data = 'nombre=' + encodeURIComponent(nombreStr) + '&apellido=' + encodeURIComponent(apellidoStr);
+
+            xhr.responseType = "text";
+            xhr.onreadystatechange = procesaRespuesta;
+            xhr.open('POST', 'http://localhost:3000/agregarpersona', true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.send(data);
+        }
+
+        function procesaRespuesta() {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                imprimirContenido();
+
+            }
+        }
+
+        function imprimirContenido() {
+            req = new XMLHttpRequest();
+            req.onreadystatechange = traerLista;
+            req.open('GET', 'http://localhost:3000/traerpersonas', true);
+            req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            req.send();
+
+        }
+
+
+        function traerLista() {
+            miLista = new Object();
+            bodyTabla = document.getElementById('contenido');
+
+            body = "";
+            acumulador = 0;
+
+            if (req.readyState == 4 && req.status == 200) {
+
+                miLista = JSON.parse(req.responseText);
+                miLista.forEach(function (element) {
+
+                    cadena = "<tr><td>" + element.nombre + "</td><td>" + element.apellido + "</td><td><input type='button' onclick='Borrar(" + acumulador + ")' id='btnAgregar' value='Borrar'></td><td><input type='button' onclick='ModicarUsuario(" + acumulador + ")' id='btnAgregar' value='Modificar'></tr>";
+                    body += cadena;
+                    acumulador++;
+
+                }, this);
+                bodyTabla.innerHTML = body;
+
+            }
+
+        }
+
+        function ModicarUsuario(indice) {
+
+            nombreStr = document.getElementById('nombreStr').value;
+            apellidoStr = document.getElementById('apellidoStr').value;
+
+            alert(nombreStr);
+            alert(indice);
+            varPersona = new Object();
+            varPersona.nombre = nombreStr;
+            varPersona.apellido = apellidoStr;
+
+
+            xhr1 = new XMLHttpRequest();
+            xhr1.responseType = "text";
+            xhr1.onreadystatechange = imprimirContenido;
+            xhr1.open('POST', 'http://localhost:3000/modificarpersona', true);
+            xhr1.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+            data = 'indice=' + encodeURIComponent(indice) + '&persona=' + encodeURIComponent(JSON.stringify(varPersona));
+
+            xhr1.send(data);
+
+        }
+
+
+        function Borrar(index) {
+
+            alert('Borramos indice: ' + index)
+
+            req.open('POST', 'http://localhost:3000/eliminarpersona', true);
+            req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            data = '&indice=' + encodeURIComponent(index);
+            req.send(data);
+            imprimirContenido();
+
+        }
+    </script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    <h3>Test node</h3>
+    <div id="form">
+        <label>Nombre:</label><br>
+        <input type="text" id="nombreStr">
+        <br>
+        <label>Apellido: </label><br>
+        <input type="text" id="apellidoStr"><br>
+        <input type="button" onclick="Cargar()" id="btnAgregar" value="Agregar">
+    </div><br><br>
+    <div>
+        <table id="tablaUsuarios">
+            <td><b>Nombre</b></td>
+            <td><b>Apellido</b></td>
+            <td><b>Borrar</b></td>
+            <td><b>Modificar</b></td>
+            <tbody id="contenido">
+
+            </tbody>
+        </table>
+    </div>
+
+
 </body>
+
 </html>
