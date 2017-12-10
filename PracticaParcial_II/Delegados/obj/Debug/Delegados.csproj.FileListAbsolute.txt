@@ -1,0 +1,9 @@
+F:\Practica_C#\PracticaParcial\Delegados\bin\Debug\Delegados.exe.config
+F:\Practica_C#\PracticaParcial\Delegados\bin\Debug\Delegados.exe
+F:\Practica_C#\PracticaParcial\Delegados\bin\Debug\Delegados.pdb
+F:\Practica_C#\PracticaParcial\Delegados\obj\Debug\Delegados.csprojResolveAssemblyReference.cache
+F:\Practica_C#\PracticaParcial\Delegados\obj\Debug\Delegados.exe
+F:\Practica_C#\PracticaParcial\Delegados\obj\Debug\Delegados.pdb
+F:\Practica_C#\PracticaParcial_II\Delegados\bin\Debug\Delegados.exe.config
+F:\Practica_C#\PracticaParcial_II\Delegados\obj\Debug\Delegados.exe
+F:\Practica_C#\PracticaParcial_II\Delegados\obj\Debug\Delegados.pdb
