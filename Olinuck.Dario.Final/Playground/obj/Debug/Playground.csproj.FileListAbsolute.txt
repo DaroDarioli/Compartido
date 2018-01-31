@@ -1,0 +1,7 @@
+F:\Practica_C#\final\Olinuck.Dario.Final\Playground\bin\Debug\Playground.exe.config
+F:\Practica_C#\final\Olinuck.Dario.Final\Playground\bin\Debug\Playground.exe
+F:\Practica_C#\final\Olinuck.Dario.Final\Playground\bin\Debug\Playground.pdb
+F:\Practica_C#\final\Olinuck.Dario.Final\Playground\obj\Debug\Playground.csprojResolveAssemblyReference.cache
+F:\Practica_C#\final\Olinuck.Dario.Final\Playground\obj\Debug\Playground.csproj.CoreCompileInputs.cache
+F:\Practica_C#\final\Olinuck.Dario.Final\Playground\obj\Debug\Playground.exe
+F:\Practica_C#\final\Olinuck.Dario.Final\Playground\obj\Debug\Playground.pdb
