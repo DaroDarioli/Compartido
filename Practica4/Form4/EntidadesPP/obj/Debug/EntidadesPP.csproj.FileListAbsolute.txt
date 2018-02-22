@@ -1,0 +1,2 @@
+C:\Users\museo\Documents\Domingo\Practica C#\Practica4\Form4\EntidadesPP\obj\Debug\EntidadesPP.csprojResolveAssemblyReference.cache
+C:\Users\museo\Documents\Domingo\Practica C#\Practica4\Form4\EntidadesPP\obj\Debug\EntidadesPP.csproj.CoreCompileInputs.cache
