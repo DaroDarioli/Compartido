@@ -1,0 +1,16 @@
+Proyecto windows forms:
+
+-clase persona: string nombre, string apellido, int edad
+
+-Windows forms que tome los datos
+
+-boton guarda en base de datos,
+
+_boton lee de base de datos
+
+
+-botones :txt xml y binario
+
+-botones lee
+
+-botones guarda foto
